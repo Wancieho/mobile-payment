@@ -23,7 +23,7 @@ function request(callback) {
   var postRequest = https.request(options, function (res) {
     res.setEncoding('utf8');
     res.on('data', function (chunk) {
-      jsonRes = JSON.parse(chunk);
+      const jsonRes = JSON.parse(chunk);
       return callback(jsonRes);
     });
   });

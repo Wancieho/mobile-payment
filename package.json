@@ -1,7 +1,7 @@
 {
   "name": "mobile-payment-peach",
   "version": "0.0.1",
-  "description": "A NodeJS web socket experiment",
+  "description": "NodeJS mobile app Peach Payments gateway test",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
