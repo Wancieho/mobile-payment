@@ -12,7 +12,7 @@ function request(callback) {
 
   const options = {
     port: 443,
-    host: 'https://test.oppwa.com',
+    host: 'test.oppwa.com',
     path,
     method: 'POST',
     headers: {
