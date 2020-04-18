@@ -47,3 +47,11 @@ function request(callback) {
 setTimeout(() => request((responseData) => {
   console.log(responseData);
 }), 2000);
+
+var http = require('http');
+
+var app = http.createServer(function (req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({}));
+});
+app.listen(8080);
