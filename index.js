@@ -44,13 +44,13 @@ function request(callback) {
   }
 }
 
-setTimeout(() => request((responseData) => {
+setTimeout(() => request(responseData => {
   console.log(responseData);
 }), 2000);
 
 var http = require('http');
 
-var app = http.createServer(function (req, res) {
+var app = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify({}));
 });
